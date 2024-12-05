@@ -13,10 +13,10 @@ public class SayHello {
         
     }
     // here name is variable so we put into curly braces--hello is constant
-    @RequestMapping("/hello/{namee}")
+    @RequestMapping("/hello/{name}")
     // pathvariable used for-- from  map taking  name variable and map with String name
-    public String SayHellotosomeone(@PathVariable("namee") String namee){
-        return "Hello"+ " "+namee;
+    public String SayHellotosomeone(@PathVariable("name") String name){
+        return "Hello"+ " "+name;
 
     }
 }
